@@ -38,4 +38,4 @@ members = ["example/src-tauri"]
 
 
 [workspace.dependencies]
-specta = { version = "=2.0.0-rc.1" }
+specta = { version = "=1.0.5" }
