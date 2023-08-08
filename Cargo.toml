@@ -22,7 +22,10 @@ javascript = []
 typescript = ["specta/typescript"]
 
 [dependencies]
-specta = { workspace = true, features = ["functions", "tauri"] }
+specta = { repository = "https://github.com/lnxcz/specta", branch = "v2", features = [
+    "functions",
+    "tauri",
+] }
 serde = "1.0.183"
 serde_json = "1.0.104"
 tauri = { version = "2.0.0-alpha.10" }
@@ -32,10 +35,3 @@ indoc = "2.0.3"
 
 [dev-dependencies]
 doc-comment = "0.3.3"
-
-[workspace]
-members = ["example/src-tauri"]
-
-
-[workspace.dependencies]
-specta = { version = "=1.0.5" }
