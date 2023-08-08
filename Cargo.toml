@@ -22,18 +22,20 @@ javascript = []
 typescript = ["specta/typescript"]
 
 [dependencies]
-specta = { version = "1.0.3", features = ["functions", "tauri"] }
-serde = "1.0.152"
-serde_json = "1.0.93"
-tauri = "1.2.4"
+specta = { workspace = true, features = ["functions", "tauri"] }
+serde = "1.0.183"
+serde_json = "1.0.104"
+tauri = { version = "2.0.0-alpha.10" }
 thiserror = "1.0.38"
 heck = "0.4.1"
-indoc = "2.0.0"
+indoc = "2.0.3"
 
 [dev-dependencies]
 doc-comment = "0.3.3"
 
 [workspace]
-members = [
-    "example/src-tauri",
-]
+members = ["example/src-tauri"]
+
+
+[workspace.dependencies]
+specta = { version = "=2.0.0-rc.1" }
