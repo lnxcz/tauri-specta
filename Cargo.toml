@@ -22,7 +22,7 @@ javascript = []
 typescript = ["specta/typescript"]
 
 [dependencies]
-specta = { repository = "https://github.com/lnxcz/specta", branch = "v2", features = [
+specta = { git = "https://github.com/lnxcz/specta", branch = "v2", features = [
     "functions",
     "tauri",
 ] }
